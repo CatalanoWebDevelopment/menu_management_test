@@ -1,3 +1,3 @@
 class Menu < ApplicationRecord
-    has_many :menu_items, dependent: :destroy
+    has_and_belongs_to_many :menu_items
 end
